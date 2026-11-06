@@ -1,9 +1,13 @@
-##Lab1
+# Lab1
 
-##Exercise 1:
 
-## Task: Add a new rule to the Knowledge Base for students who have a CGPA of 3.70 or higher and zero disciplinary warnings.
+# Exercise 1:
 
+
+## Task:Degree Honors RuleAdd a new rule to `UNIVERSITY_KB["rules"]` for students completing their degree program:
+ - Condition: `cgpa >= 3.70` and `disciplinary_warnings == 0` $\rightarrow$ Status: "Graduated with Magna Cum Laude Honors".
+ 
+ ```python
 UNIVERSITY_KB = {
     "rules": []
 }
@@ -17,14 +21,14 @@ UNIVERSITY_KB["rules"].append({
 })
 
 print("New Degree Honors Rule Added Successfully!")
-print(UNIVERSITY_KB)
+```
 _____________________________________________________________________________________________________________________________
-##Exercise 2:
+# Exercise 2:-Tracing Forward ChainingModify `evaluate_student()` to print each evaluated rule condition as the loop runs, demonstrating step-by-step logical deduction.
 
 ## Task: Modify the evaluate_student() function to print every evaluated rule condition.
 
 def evaluate_student(student_record, kb):
-
+```python
     print(f"\n--- EVALUATING STUDENT: {student_record['student_name']} ---")
 
     # Step 1: Check Attendance Rule
@@ -77,4 +81,4 @@ def evaluate_student(student_record, kb):
         "grade": "N/A",
         "status": "Invalid Score Entry",
         "action": "Verify submitted marks with the exam department."
-    }
+    }```
