@@ -1,9 +1,9 @@
-#Lab1
+##Lab1
 
-#Exercise 1:
+##Exercise 1:
 
 ## Task: Add a new rule to the Knowledge Base for students who have a CGPA of 3.70 or higher and zero disciplinary warnings.
-'''python
+
 UNIVERSITY_KB = {
     "rules": []
 }
@@ -17,9 +17,9 @@ UNIVERSITY_KB["rules"].append({
 })
 
 print("New Degree Honors Rule Added Successfully!")
-print(UNIVERSITY_KB)'''
-_________________________________________________________________________________________________________________________________
-#Exercise 2:
+print(UNIVERSITY_KB)
+_____________________________________________________________________________________________________________________________
+##Exercise 2:
 
 ## Task: Modify the evaluate_student() function to print every evaluated rule condition.
 
