@@ -81,4 +81,5 @@ def evaluate_student(student_record, kb):
         "grade": "N/A",
         "status": "Invalid Score Entry",
         "action": "Verify submitted marks with the exam department."
-    }```
+    }
+```
